@@ -1,0 +1,244 @@
+/* Default Light Theme */
+body {
+    opacity: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: opacity 0.3s ease-in-out, background-color 0s ease-in-out, color 0s ease-in-out;
+}
+
+/* Show content after theme is applied */
+body.loaded {
+    opacity: 1;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card Style */
+.card {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Dark mode card */
+.dark-mode .card {
+    background: #333;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #ffffff; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Dark Mode Sidebar */
+.dark-mode .sidebar {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Change nav links in dark mode */
+.dark-mode .sidebar .nav-link {
+    color: #ccc;
+}
+
+.dark-mode .sidebar .nav-link.active {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Sidebar toggler button */
+.dark-mode .sidebar-toggler i {
+    color: #fff;
+}
+
+/* Theme Toggle Switch */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 60px;
+    height: 30px;
+    background: #cce7ff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Toggle background dark mode */
+.dark-mode .theme-toggle {
+    background: #1a1a2e;
+}
+
+/* Sun and Moon icons */
+.theme-toggle i {
+    font-size: 18px;
+    color: #ffcc00;
+    transition: 0.3s;
+}
+
+/* Dark mode icon */
+.dark-mode .theme-toggle i {
+    color: #ffffff;
+}
+
+/* Slider button */
+.toggle-slider {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+/* Move slider to the right in dark mode */
+.dark-mode .toggle-slider {
+    transform: translateX(100%);
+}
+
+/* Table Styling */
+.table {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Ensure table text changes in dark mode */
+.dark-mode .table td {
+    background: #333 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+    /* color: #fff !important; */
+    border-color: #555 !important;
+}
+
+/* Override Bootstrap's .table-dark */
+.dark-mode .table-dark {
+    background-color: #222 !important;
+}
+
+.dark-mode .table-dark th,
+.dark-mode .table-dark td {
+    color: #fff !important;
+}
+
+/* Table Hover Effect */
+.table-hover tbody tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .table-hover tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.btn {
+    transition: 0.3s ease-in-out;
+}
+
+/* Dark mode button styles */
+.dark-mode .btn-primary {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    color: #fff;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #1c86ee;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Default Light Mode Placeholder */
+input::placeholder, 
+textarea::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+/* Dark Mode Placeholder */
+.dark-mode input::placeholder, 
+.dark-mode textarea::placeholder {
+    color: #ddd;
+    opacity: 1;
+}
+
+/* Modal Styling */
+.modal-content {
+    background: #fff;
+    color: #333;
+}
+
+/* Dark mode modal */
+.dark-mode .modal-content {
+    background: #333;
+    color: #fff;
+}
+
+/* Form Inputs */
+input, textarea {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* Dark mode inputs */
+.dark-mode input,
+.dark-mode textarea {
+    background: #222;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Popup Styling */
+#qrPopup {
+    background: white;
+    color: black;
+}
+
+.dark-mode #qrPopup {
+    background: #333;
+    color: white;
+}
